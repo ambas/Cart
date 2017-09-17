@@ -11,9 +11,13 @@ import UIKit
 class CartViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
 
+    var viewModel: CartViewModelType!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.getCart { (cart) in
 
+        }
         // Do any additional setup after loading the view.
     }
 

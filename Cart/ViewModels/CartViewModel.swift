@@ -8,9 +8,8 @@
 
 import Hatstall
 
-struct CartViewModel {
-//    var connector: Connectable!
-    var connector = CartClient()
+struct CartViewModel: CartViewModelType {
+    var connector: Connectable!
 
     func getCart(success: @escaping (Cart) -> ()) {
         connector.requestObject(path: "", param: [:], isShowLoading: false, require: nil, errorHandler: { (error) in
