@@ -8,5 +8,7 @@ target 'Cart' do
   # Pods for Cart
   pod 'Hatstall', :git => 'https://github.com/ambas/Hatstall.git'
   pod 'IGListKit', '~> 3.1.1'
+  pod 'Swinject', '~> 2.1.1'
+  pod 'SwinjectStoryboard', '~> 1.1.2'
 
 end
