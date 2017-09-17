@@ -1,0 +1,834 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		069C3407F32D50165D4903E45ECC4C1D /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C80C19E2C58376E309669C1B6B3020B /* TransformOf.swift */; };
+		0FED58762676A8D006ACD296983FB52C /* Hatstall-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F0CE4BEFC935B193DD73BD5376836C /* Hatstall-dummy.m */; };
+		1BCB78092750606F3C497469E9FAAB6D /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080C443D5EC06EFC43C57AC734D9DAED /* EnumTransform.swift */; };
+		35430E224DDE7ABDB45F480B81619185 /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABAEF8CA47889484CCF2AA4003CF58F /* DateTransform.swift */; };
+		36625220183C56444666A011D9838040 /* ObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5235C0DD8BEAC4FECBC2158E9588B8BA /* ObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E879D38DD15EEAA8007F73F37D2F15D /* MapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C1B5D57816AD53576AE866106F79B2 /* MapError.swift */; };
+		47C28017FC5AECCDBAD7C4D74170327B /* DictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C180AB106F4716F6A29EC6B4B7D497 /* DictionaryTransform.swift */; };
+		5256E2D3C03C7A767BA6C756C64DF0BC /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5DB192E0CF1B322C5F694AC620D758 /* URLTransform.swift */; };
+		61388F43E523A37A73D70AF38A0170AD /* HexColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F71BB7571F28A2817A47C86CB37526D /* HexColorTransform.swift */; };
+		62A92946F45B97550BC1437E1BE7F2FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF2A8127EDF29ABAA8C2FD230237309 /* Foundation.framework */; };
+		642D1FD9D0B9729C00728AB8161EAD0E /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E7EB993269CDBE04943228096BFE6F /* NSDecimalNumberTransform.swift */; };
+		707C755C9D81224DB952462E00563DCF /* IntegerOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704CDE0801561B063792DF0F70A74AE8 /* IntegerOperators.swift */; };
+		70B41B1534E110845A28BCEAFF7EA029 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A552EF8D1B9205386E41E2E1964CBAC /* Mappable.swift */; };
+		729FBEB6CA2CDC81DCB2D44EA3466157 /* Hatstall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C96816D2B21866023997467DD44FEB2 /* Hatstall.swift */; };
+		734201B681BE1A6E4E4DA322DB4E49F8 /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBDF75D40DA277D0436A1B469A53064 /* FromJSON.swift */; };
+		81AF436D517AF7A4F0C151DE6B4C351D /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CDBDFFF559F0A74C06BA44A2E55DA0 /* DateFormatterTransform.swift */; };
+		87A61D1A8980CAFBF04239575BECACF8 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F342EBFC61A3BADE4FBD2B028A7B70B /* Mapper.swift */; };
+		8A275D1828956E04213A27A322C33BD8 /* DataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7AC335F69690127656EFA0C5A37D47 /* DataTransform.swift */; };
+		9457AAB370F610FE6D2E89B358F9B301 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB04E523F41584BEF2E28A7E94134F1E /* TransformType.swift */; };
+		960A4C9583ECD8155B0A325FD05C2113 /* Hatstall-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EADF495D527C3902342825E239707DE9 /* Hatstall-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9958973EBB98A7936BAD9CEB9BDA2750 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B229AA4AFFFBF5F91C23F29CB85D31 /* ToJSON.swift */; };
+		9BC8306B24BC6D213062B8F9A7C69BCC /* Pods-Cart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8171B5BFE99B4E65B542DD30FAF77E9C /* Pods-Cart-dummy.m */; };
+		BD21FD6BB08DE682709EF65FDE5C0CFB /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6097A305888A8C401A71C6A9501EA9A8 /* CustomDateFormatTransform.swift */; };
+		C048BB277034BF54D86883D9B74CDA42 /* TransformOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07893BAA46B57EE40C8EA20835CFAC03 /* TransformOperators.swift */; };
+		C9353E667A574600AA144080449ED9D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF2A8127EDF29ABAA8C2FD230237309 /* Foundation.framework */; };
+		CE7D0B192AF67B42A71B832622AFA435 /* ImmutableMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F4F2A2236F1FC3331A3491AA62F2E4 /* ImmutableMappable.swift */; };
+		D7D76921455A8EA1DC47EAD482F06FE0 /* ObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AED3F42A3F92B9FA0E0FA4E11F73C45 /* ObjectMapper-dummy.m */; };
+		DA92AB0712E1805604F2C99F67F0F124 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8BD858EA20D4632FFD37AD28F21677 /* Operators.swift */; };
+		DD94162967184FBCBC1122F43B0829D6 /* EnumOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C40A3B4947919840A4AA3848E70815 /* EnumOperators.swift */; };
+		E24CFA6D8828DC4CA761515466E6F9DF /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1EF3E9E3CBEC8950011FF3C4FC89B /* ISO8601DateTransform.swift */; };
+		E8F2CCE35D0D6ABE84DCD71FFFDC9EF4 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 515BB24BCB558A6C6816DC6C1C97492C /* ObjectMapper.framework */; };
+		EA331152F70C3308271ABE60B702E698 /* Pods-Cart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 305734EF2D417D34434F76B8F4BD8E83 /* Pods-Cart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F582F3C8121D3D4E4CDDD6F5C38FB5BE /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6A8AE0631E812B17F917B84A9FE6E2 /* Map.swift */; };
+		FA9A471DAC12AA51E7508DC6621492D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF2A8127EDF29ABAA8C2FD230237309 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58FD29D8B00E3C3730598C1149493383 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66882BC3A9334405FA7D5FCD1B4CC9B4;
+			remoteInfo = ObjectMapper;
+		};
+		A6D8E28D159884295C2132FE61540F1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A58B9BEDB3E65CB7A6B22944ACDB102B;
+			remoteInfo = Hatstall;
+		};
+		E878D496AC27CDBB7B42E69CD9577EE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66882BC3A9334405FA7D5FCD1B4CC9B4;
+			remoteInfo = ObjectMapper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07893BAA46B57EE40C8EA20835CFAC03 /* TransformOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOperators.swift; path = Sources/TransformOperators.swift; sourceTree = "<group>"; };
+		080C443D5EC06EFC43C57AC734D9DAED /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = Sources/EnumTransform.swift; sourceTree = "<group>"; };
+		0CBDF75D40DA277D0436A1B469A53064 /* FromJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromJSON.swift; path = Sources/FromJSON.swift; sourceTree = "<group>"; };
+		11C180AB106F4716F6A29EC6B4B7D497 /* DictionaryTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryTransform.swift; path = Sources/DictionaryTransform.swift; sourceTree = "<group>"; };
+		1F392AC51AC0D55361A173840DF23D32 /* Pods-Cart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Cart.modulemap"; sourceTree = "<group>"; };
+		2AED3F42A3F92B9FA0E0FA4E11F73C45 /* ObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectMapper-dummy.m"; sourceTree = "<group>"; };
+		2C7AC335F69690127656EFA0C5A37D47 /* DataTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataTransform.swift; path = Sources/DataTransform.swift; sourceTree = "<group>"; };
+		2F71BB7571F28A2817A47C86CB37526D /* HexColorTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexColorTransform.swift; path = Sources/HexColorTransform.swift; sourceTree = "<group>"; };
+		305734EF2D417D34434F76B8F4BD8E83 /* Pods-Cart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cart-umbrella.h"; sourceTree = "<group>"; };
+		3BACDA7050FA90A09786C7E599DD5453 /* Pods_Cart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Cart.framework; path = "Pods-Cart.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C96816D2B21866023997467DD44FEB2 /* Hatstall.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hatstall.swift; path = Hatstall/Classes/Hatstall.swift; sourceTree = "<group>"; };
+		3F342EBFC61A3BADE4FBD2B028A7B70B /* Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mapper.swift; path = Sources/Mapper.swift; sourceTree = "<group>"; };
+		42C40A3B4947919840A4AA3848E70815 /* EnumOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumOperators.swift; path = Sources/EnumOperators.swift; sourceTree = "<group>"; };
+		515BB24BCB558A6C6816DC6C1C97492C /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5235C0DD8BEAC4FECBC2158E9588B8BA /* ObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-umbrella.h"; sourceTree = "<group>"; };
+		529DA195858605D3332FB85F082485E3 /* ObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.xcconfig; sourceTree = "<group>"; };
+		6097A305888A8C401A71C6A9501EA9A8 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = Sources/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		62F31B26EEA3F33EEC69A364E9FFC95B /* ObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ObjectMapper.modulemap; sourceTree = "<group>"; };
+		67F4F2A2236F1FC3331A3491AA62F2E4 /* ImmutableMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmutableMappable.swift; path = Sources/ImmutableMappable.swift; sourceTree = "<group>"; };
+		6DFDA2E294B52F5439562DFA727DBAA8 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ObjectMapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		704CDE0801561B063792DF0F70A74AE8 /* IntegerOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntegerOperators.swift; path = Sources/IntegerOperators.swift; sourceTree = "<group>"; };
+		74F0CE4BEFC935B193DD73BD5376836C /* Hatstall-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Hatstall-dummy.m"; sourceTree = "<group>"; };
+		78C1B5D57816AD53576AE866106F79B2 /* MapError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapError.swift; path = Sources/MapError.swift; sourceTree = "<group>"; };
+		7C80C19E2C58376E309669C1B6B3020B /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = Sources/TransformOf.swift; sourceTree = "<group>"; };
+		8171B5BFE99B4E65B542DD30FAF77E9C /* Pods-Cart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cart-dummy.m"; sourceTree = "<group>"; };
+		867C121BAE0F3F2D462B4C10D96B5A4B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A552EF8D1B9205386E41E2E1964CBAC /* Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mappable.swift; path = Sources/Mappable.swift; sourceTree = "<group>"; };
+		8C35A6CDA434D3BAB29F2C2B2B6E453C /* Hatstall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Hatstall.framework; path = Hatstall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98D66E24EDAEC6B8720FB16CB058697F /* Pods-Cart-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cart-frameworks.sh"; sourceTree = "<group>"; };
+		9B9F88373CDBD9F7AE5B15F1889F05B2 /* Pods-Cart-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cart-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9E80A085463DBFBC1DAAA754BC215044 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2F8BBB1CA623D3A7D9D1E34273445D3 /* Pods-Cart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cart.release.xcconfig"; sourceTree = "<group>"; };
+		A6D4214D8BFE9BD80DED81D61AFD1A56 /* Pods-Cart-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cart-resources.sh"; sourceTree = "<group>"; };
+		AA8BD858EA20D4632FFD37AD28F21677 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
+		AC5DB192E0CF1B322C5F694AC620D758 /* URLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLTransform.swift; path = Sources/URLTransform.swift; sourceTree = "<group>"; };
+		B64B682D6D85EA8FC161A960C8A11876 /* Hatstall.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Hatstall.modulemap; sourceTree = "<group>"; };
+		B6FE306595A9DFF8E72BF7D8776EC595 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBF2A8127EDF29ABAA8C2FD230237309 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C3B8FC64DA22251AB7CB82E2936CDBD8 /* Pods-Cart-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cart-acknowledgements.plist"; sourceTree = "<group>"; };
+		CC6A8AE0631E812B17F917B84A9FE6E2 /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = Sources/Map.swift; sourceTree = "<group>"; };
+		CED1EF3E9E3CBEC8950011FF3C4FC89B /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = Sources/ISO8601DateTransform.swift; sourceTree = "<group>"; };
+		CFE37CEE252E13CEE25B5EA183563C31 /* ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
+		D4E7EB993269CDBE04943228096BFE6F /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDecimalNumberTransform.swift; path = Sources/NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
+		D6F646CAAD9C7224E0CC76EE8AA0C281 /* Hatstall-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hatstall-prefix.pch"; sourceTree = "<group>"; };
+		D7B229AA4AFFFBF5F91C23F29CB85D31 /* ToJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToJSON.swift; path = Sources/ToJSON.swift; sourceTree = "<group>"; };
+		E5214628AD3E219CE7D04023E577E5C8 /* Hatstall.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Hatstall.xcconfig; sourceTree = "<group>"; };
+		EADF495D527C3902342825E239707DE9 /* Hatstall-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hatstall-umbrella.h"; sourceTree = "<group>"; };
+		F3CDBDFFF559F0A74C06BA44A2E55DA0 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatterTransform.swift; path = Sources/DateFormatterTransform.swift; sourceTree = "<group>"; };
+		FABAEF8CA47889484CCF2AA4003CF58F /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = Sources/DateTransform.swift; sourceTree = "<group>"; };
+		FB04E523F41584BEF2E28A7E94134F1E /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = Sources/TransformType.swift; sourceTree = "<group>"; };
+		FE85E01D84FB8235935C7F313405B07C /* Pods-Cart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cart.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20195755AEBF06470FFF2D65A017591B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62A92946F45B97550BC1437E1BE7F2FB /* Foundation.framework in Frameworks */,
+				E8F2CCE35D0D6ABE84DCD71FFFDC9EF4 /* ObjectMapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		218D4BE3F94EEA1F8E9227D13E3841E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9A471DAC12AA51E7508DC6621492D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		404DCB393DE5209FC85BF5DE4B964137 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9353E667A574600AA144080449ED9D0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04EBC5D1B9C190A066C6FA3302E6B396 /* ObjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				6097A305888A8C401A71C6A9501EA9A8 /* CustomDateFormatTransform.swift */,
+				2C7AC335F69690127656EFA0C5A37D47 /* DataTransform.swift */,
+				F3CDBDFFF559F0A74C06BA44A2E55DA0 /* DateFormatterTransform.swift */,
+				FABAEF8CA47889484CCF2AA4003CF58F /* DateTransform.swift */,
+				11C180AB106F4716F6A29EC6B4B7D497 /* DictionaryTransform.swift */,
+				42C40A3B4947919840A4AA3848E70815 /* EnumOperators.swift */,
+				080C443D5EC06EFC43C57AC734D9DAED /* EnumTransform.swift */,
+				0CBDF75D40DA277D0436A1B469A53064 /* FromJSON.swift */,
+				2F71BB7571F28A2817A47C86CB37526D /* HexColorTransform.swift */,
+				67F4F2A2236F1FC3331A3491AA62F2E4 /* ImmutableMappable.swift */,
+				704CDE0801561B063792DF0F70A74AE8 /* IntegerOperators.swift */,
+				CED1EF3E9E3CBEC8950011FF3C4FC89B /* ISO8601DateTransform.swift */,
+				CC6A8AE0631E812B17F917B84A9FE6E2 /* Map.swift */,
+				78C1B5D57816AD53576AE866106F79B2 /* MapError.swift */,
+				8A552EF8D1B9205386E41E2E1964CBAC /* Mappable.swift */,
+				3F342EBFC61A3BADE4FBD2B028A7B70B /* Mapper.swift */,
+				D4E7EB993269CDBE04943228096BFE6F /* NSDecimalNumberTransform.swift */,
+				AA8BD858EA20D4632FFD37AD28F21677 /* Operators.swift */,
+				D7B229AA4AFFFBF5F91C23F29CB85D31 /* ToJSON.swift */,
+				7C80C19E2C58376E309669C1B6B3020B /* TransformOf.swift */,
+				07893BAA46B57EE40C8EA20835CFAC03 /* TransformOperators.swift */,
+				FB04E523F41584BEF2E28A7E94134F1E /* TransformType.swift */,
+				AC5DB192E0CF1B322C5F694AC620D758 /* URLTransform.swift */,
+				0B5A00F044C818AE9A1E97BB7A2953F1 /* Support Files */,
+			);
+			name = ObjectMapper;
+			path = ObjectMapper;
+			sourceTree = "<group>";
+		};
+		0B5A00F044C818AE9A1E97BB7A2953F1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				867C121BAE0F3F2D462B4C10D96B5A4B /* Info.plist */,
+				62F31B26EEA3F33EEC69A364E9FFC95B /* ObjectMapper.modulemap */,
+				529DA195858605D3332FB85F082485E3 /* ObjectMapper.xcconfig */,
+				2AED3F42A3F92B9FA0E0FA4E11F73C45 /* ObjectMapper-dummy.m */,
+				CFE37CEE252E13CEE25B5EA183563C31 /* ObjectMapper-prefix.pch */,
+				5235C0DD8BEAC4FECBC2158E9588B8BA /* ObjectMapper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ObjectMapper";
+			sourceTree = "<group>";
+		};
+		38B23027A57B3FDABB9B301FC78AC4CE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FFB794A0A741B95149EF72017789325 /* Pods-Cart */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3A79AFBBC29D75FBE2C24098C0998779 /* Hatstall */ = {
+			isa = PBXGroup;
+			children = (
+				3C96816D2B21866023997467DD44FEB2 /* Hatstall.swift */,
+				43C46809D1232DD8327DD905EA32216F /* Support Files */,
+			);
+			name = Hatstall;
+			path = Hatstall;
+			sourceTree = "<group>";
+		};
+		3FFB794A0A741B95149EF72017789325 /* Pods-Cart */ = {
+			isa = PBXGroup;
+			children = (
+				B6FE306595A9DFF8E72BF7D8776EC595 /* Info.plist */,
+				1F392AC51AC0D55361A173840DF23D32 /* Pods-Cart.modulemap */,
+				9B9F88373CDBD9F7AE5B15F1889F05B2 /* Pods-Cart-acknowledgements.markdown */,
+				C3B8FC64DA22251AB7CB82E2936CDBD8 /* Pods-Cart-acknowledgements.plist */,
+				8171B5BFE99B4E65B542DD30FAF77E9C /* Pods-Cart-dummy.m */,
+				98D66E24EDAEC6B8720FB16CB058697F /* Pods-Cart-frameworks.sh */,
+				A6D4214D8BFE9BD80DED81D61AFD1A56 /* Pods-Cart-resources.sh */,
+				305734EF2D417D34434F76B8F4BD8E83 /* Pods-Cart-umbrella.h */,
+				FE85E01D84FB8235935C7F313405B07C /* Pods-Cart.debug.xcconfig */,
+				A2F8BBB1CA623D3A7D9D1E34273445D3 /* Pods-Cart.release.xcconfig */,
+			);
+			name = "Pods-Cart";
+			path = "Target Support Files/Pods-Cart";
+			sourceTree = "<group>";
+		};
+		43C46809D1232DD8327DD905EA32216F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B64B682D6D85EA8FC161A960C8A11876 /* Hatstall.modulemap */,
+				E5214628AD3E219CE7D04023E577E5C8 /* Hatstall.xcconfig */,
+				74F0CE4BEFC935B193DD73BD5376836C /* Hatstall-dummy.m */,
+				D6F646CAAD9C7224E0CC76EE8AA0C281 /* Hatstall-prefix.pch */,
+				EADF495D527C3902342825E239707DE9 /* Hatstall-umbrella.h */,
+				9E80A085463DBFBC1DAAA754BC215044 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Hatstall";
+			sourceTree = "<group>";
+		};
+		67AE381B095784F73407B96828CDAC49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A79AFBBC29D75FBE2C24098C0998779 /* Hatstall */,
+				04EBC5D1B9C190A066C6FA3302E6B396 /* ObjectMapper */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		72A4F101D4D40D3C9EBA12D90663F5FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				515BB24BCB558A6C6816DC6C1C97492C /* ObjectMapper.framework */,
+				B698BE032F2E2D71DEAC2D89C403A556 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				72A4F101D4D40D3C9EBA12D90663F5FA /* Frameworks */,
+				67AE381B095784F73407B96828CDAC49 /* Pods */,
+				CB06A81508DE4657B8DF146E85F96ECC /* Products */,
+				38B23027A57B3FDABB9B301FC78AC4CE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B698BE032F2E2D71DEAC2D89C403A556 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BBF2A8127EDF29ABAA8C2FD230237309 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CB06A81508DE4657B8DF146E85F96ECC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C35A6CDA434D3BAB29F2C2B2B6E453C /* Hatstall.framework */,
+				6DFDA2E294B52F5439562DFA727DBAA8 /* ObjectMapper.framework */,
+				3BACDA7050FA90A09786C7E599DD5453 /* Pods_Cart.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0641F85CA098B25174B7CA21F479B1E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA331152F70C3308271ABE60B702E698 /* Pods-Cart-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23AAB65680978AD85DB6C3C342F6276C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960A4C9583ECD8155B0A325FD05C2113 /* Hatstall-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		410FA4FB62D604FB79B846A42D27337B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36625220183C56444666A011D9838040 /* ObjectMapper-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		66882BC3A9334405FA7D5FCD1B4CC9B4 /* ObjectMapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29C6E6530544154BA6B82FD095428E4D /* Build configuration list for PBXNativeTarget "ObjectMapper" */;
+			buildPhases = (
+				00F99A01B1BA2D70974153CF37D66CD3 /* Sources */,
+				218D4BE3F94EEA1F8E9227D13E3841E0 /* Frameworks */,
+				410FA4FB62D604FB79B846A42D27337B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjectMapper;
+			productName = ObjectMapper;
+			productReference = 6DFDA2E294B52F5439562DFA727DBAA8 /* ObjectMapper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7CF1FA6F3FD5372BBF07B14229B18726 /* Pods-Cart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F69FB6F9A50BB9914C55D73DBFDCD74D /* Build configuration list for PBXNativeTarget "Pods-Cart" */;
+			buildPhases = (
+				82F1BD9AF7CFB3D36B57DC35BC9DA106 /* Sources */,
+				404DCB393DE5209FC85BF5DE4B964137 /* Frameworks */,
+				0641F85CA098B25174B7CA21F479B1E3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				227335773D7130F27A0159CEAC06744A /* PBXTargetDependency */,
+				57B523364DF9E59F3346BCC62DF1FCC8 /* PBXTargetDependency */,
+			);
+			name = "Pods-Cart";
+			productName = "Pods-Cart";
+			productReference = 3BACDA7050FA90A09786C7E599DD5453 /* Pods_Cart.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A58B9BEDB3E65CB7A6B22944ACDB102B /* Hatstall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34E25BD7D5222799EBD50C915B7673FD /* Build configuration list for PBXNativeTarget "Hatstall" */;
+			buildPhases = (
+				804095DE258E5A0C2B9C7DE6B96FB3A7 /* Sources */,
+				20195755AEBF06470FFF2D65A017591B /* Frameworks */,
+				23AAB65680978AD85DB6C3C342F6276C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8722DE0C97CDFEBD19DDA8FC5AED63BC /* PBXTargetDependency */,
+			);
+			name = Hatstall;
+			productName = Hatstall;
+			productReference = 8C35A6CDA434D3BAB29F2C2B2B6E453C /* Hatstall.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CB06A81508DE4657B8DF146E85F96ECC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A58B9BEDB3E65CB7A6B22944ACDB102B /* Hatstall */,
+				66882BC3A9334405FA7D5FCD1B4CC9B4 /* ObjectMapper */,
+				7CF1FA6F3FD5372BBF07B14229B18726 /* Pods-Cart */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00F99A01B1BA2D70974153CF37D66CD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD21FD6BB08DE682709EF65FDE5C0CFB /* CustomDateFormatTransform.swift in Sources */,
+				8A275D1828956E04213A27A322C33BD8 /* DataTransform.swift in Sources */,
+				81AF436D517AF7A4F0C151DE6B4C351D /* DateFormatterTransform.swift in Sources */,
+				35430E224DDE7ABDB45F480B81619185 /* DateTransform.swift in Sources */,
+				47C28017FC5AECCDBAD7C4D74170327B /* DictionaryTransform.swift in Sources */,
+				DD94162967184FBCBC1122F43B0829D6 /* EnumOperators.swift in Sources */,
+				1BCB78092750606F3C497469E9FAAB6D /* EnumTransform.swift in Sources */,
+				734201B681BE1A6E4E4DA322DB4E49F8 /* FromJSON.swift in Sources */,
+				61388F43E523A37A73D70AF38A0170AD /* HexColorTransform.swift in Sources */,
+				CE7D0B192AF67B42A71B832622AFA435 /* ImmutableMappable.swift in Sources */,
+				707C755C9D81224DB952462E00563DCF /* IntegerOperators.swift in Sources */,
+				E24CFA6D8828DC4CA761515466E6F9DF /* ISO8601DateTransform.swift in Sources */,
+				F582F3C8121D3D4E4CDDD6F5C38FB5BE /* Map.swift in Sources */,
+				3E879D38DD15EEAA8007F73F37D2F15D /* MapError.swift in Sources */,
+				70B41B1534E110845A28BCEAFF7EA029 /* Mappable.swift in Sources */,
+				87A61D1A8980CAFBF04239575BECACF8 /* Mapper.swift in Sources */,
+				642D1FD9D0B9729C00728AB8161EAD0E /* NSDecimalNumberTransform.swift in Sources */,
+				D7D76921455A8EA1DC47EAD482F06FE0 /* ObjectMapper-dummy.m in Sources */,
+				DA92AB0712E1805604F2C99F67F0F124 /* Operators.swift in Sources */,
+				9958973EBB98A7936BAD9CEB9BDA2750 /* ToJSON.swift in Sources */,
+				069C3407F32D50165D4903E45ECC4C1D /* TransformOf.swift in Sources */,
+				C048BB277034BF54D86883D9B74CDA42 /* TransformOperators.swift in Sources */,
+				9457AAB370F610FE6D2E89B358F9B301 /* TransformType.swift in Sources */,
+				5256E2D3C03C7A767BA6C756C64DF0BC /* URLTransform.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804095DE258E5A0C2B9C7DE6B96FB3A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FED58762676A8D006ACD296983FB52C /* Hatstall-dummy.m in Sources */,
+				729FBEB6CA2CDC81DCB2D44EA3466157 /* Hatstall.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82F1BD9AF7CFB3D36B57DC35BC9DA106 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BC8306B24BC6D213062B8F9A7C69BCC /* Pods-Cart-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		227335773D7130F27A0159CEAC06744A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Hatstall;
+			target = A58B9BEDB3E65CB7A6B22944ACDB102B /* Hatstall */;
+			targetProxy = A6D8E28D159884295C2132FE61540F1E /* PBXContainerItemProxy */;
+		};
+		57B523364DF9E59F3346BCC62DF1FCC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjectMapper;
+			target = 66882BC3A9334405FA7D5FCD1B4CC9B4 /* ObjectMapper */;
+			targetProxy = 58FD29D8B00E3C3730598C1149493383 /* PBXContainerItemProxy */;
+		};
+		8722DE0C97CDFEBD19DDA8FC5AED63BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjectMapper;
+			target = 66882BC3A9334405FA7D5FCD1B4CC9B4 /* ObjectMapper */;
+			targetProxy = E878D496AC27CDBB7B42E69CD9577EE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A41B15D3AA834993ADDD808FA9D8764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		290E415928885512BBF4D82528B0988B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 529DA195858605D3332FB85F082485E3 /* ObjectMapper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjectMapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ObjectMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3071E132607F822A14938AF10BDE6E88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5214628AD3E219CE7D04023E577E5C8 /* Hatstall.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Hatstall/Hatstall-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Hatstall/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Hatstall/Hatstall.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Hatstall;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		356301B1B3268D413886E5C3DD7FA596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 529DA195858605D3332FB85F082485E3 /* ObjectMapper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjectMapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ObjectMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		364342C8B02D4C0F84ACFE875697BB43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE85E01D84FB8235935C7F313405B07C /* Pods-Cart.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Cart/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Cart/Pods-Cart.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Cart;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5F8E350C7DE30D68651C4B1DE59D2431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2F8BBB1CA623D3A7D9D1E34273445D3 /* Pods-Cart.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Cart/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Cart/Pods-Cart.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Cart;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9F2A8C1A8E15ED37772B25B3AFA3B075 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5214628AD3E219CE7D04023E577E5C8 /* Hatstall.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Hatstall/Hatstall-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Hatstall/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Hatstall/Hatstall.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Hatstall;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC80BBB5C066539FFFC0B2127CA5D3C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29C6E6530544154BA6B82FD095428E4D /* Build configuration list for PBXNativeTarget "ObjectMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				290E415928885512BBF4D82528B0988B /* Debug */,
+				356301B1B3268D413886E5C3DD7FA596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC80BBB5C066539FFFC0B2127CA5D3C4 /* Debug */,
+				1A41B15D3AA834993ADDD808FA9D8764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34E25BD7D5222799EBD50C915B7673FD /* Build configuration list for PBXNativeTarget "Hatstall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F2A8C1A8E15ED37772B25B3AFA3B075 /* Debug */,
+				3071E132607F822A14938AF10BDE6E88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F69FB6F9A50BB9914C55D73DBFDCD74D /* Build configuration list for PBXNativeTarget "Pods-Cart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				364342C8B02D4C0F84ACFE875697BB43 /* Debug */,
+				5F8E350C7DE30D68651C4B1DE59D2431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

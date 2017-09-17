@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Hatstall
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -42,5 +43,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+extension Connectable where Self == CartClient {
+    func hostPath() -> String {
+        return "http://iosdevth.com"
+    }
 }
 
