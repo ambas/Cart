@@ -11,11 +11,17 @@ import Hatstall
 struct CartViewModel: CartViewModelType {
     var connector: Connectable!
 
-    func getCart(success: @escaping (Cart) -> ()) {
+    func getSellers(success: @escaping ([SellerViewModelType]) -> ()) {
         connector.requestObject(path: "", param: [:], isShowLoading: false, require: nil, errorHandler: { (error) in
 
         }) { (cart: Cart) in
-            success(cart)
+            guard let sellers = cart.sellers else {
+                success([])
+                return
+            }
+
+            let sellersViewModel = sellers.map { SellerViewModel($0) }
+            success(sellersViewModel)
         }
     }
 

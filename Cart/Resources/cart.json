@@ -1,0 +1,41 @@
+{
+    "sellers": [
+                {
+                "name": "sampleName1",
+                "items": [
+                          {
+                          "name": "itemName1"
+                          },
+                          {
+                          "name": "itemName2"
+                          },
+                          {
+                          "name": "itemName3"
+                          },
+                          {
+                          "name": "itemName4"
+                          },
+                          {
+                          "name": "itemName5"
+                          },
+                          {
+                          "name": "itemName6"
+                          },
+                          {
+                          "name": "itemName7"
+                          },
+                          {
+                          "name": "itemName8"
+                          }
+                          ]
+                },
+                {
+                "name": "sampleName2",
+                "items": [
+                          {
+                          "name": "itemName1"
+                          }
+                          ]
+                }
+                ]
+}

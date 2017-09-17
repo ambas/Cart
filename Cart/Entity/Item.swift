@@ -1,5 +1,5 @@
 //
-//  Seller.swift
+//  Item.swift
 //  Cart
 //
 //  Created by Ambas Chobsanti (Lazada Group) on 9/17/17.
@@ -9,16 +9,14 @@
 import Hatstall
 import ObjectMapper
 
-struct Seller: Requestable {
+struct Item: Requestable {
+    static var path = ""
     var name: String?
-    var items: [Item]?
-    static var path = "/seller"
 
     init?(map: Map) {}
 
     mutating func mapping(map: Map) {
         name <- map["name"]
-        items <- map["items"]
     }
 
 }
