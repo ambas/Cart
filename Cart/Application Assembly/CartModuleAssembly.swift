@@ -21,7 +21,7 @@ final class CartModuleAssembly: Assembly {
         container.storyboardInitCompleted(CartViewController.self) { r, viewController in
             viewController.viewModel = r.resolve(CartViewModel.self)
         }
-
+        
         container.storyboardInitCompleted(UINavigationController.self) { r, viewController in
             
         }

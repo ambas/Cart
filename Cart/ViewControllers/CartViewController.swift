@@ -39,9 +39,7 @@ class CartViewController: UIViewController {
             self.adapter.performUpdates(animated: true, completion: nil)
         }
     }
-
-
-
+    
 }
 
 extension CartViewController: ListAdapterDataSource {
