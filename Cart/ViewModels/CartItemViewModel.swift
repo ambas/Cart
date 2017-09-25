@@ -23,7 +23,7 @@ class CartItemViewModel: CartItemViewModelType {
     } 
 
     func diffIdentifier() -> NSObjectProtocol {
-        return "test" as NSObjectProtocol
+        return self as! NSObjectProtocol
     }
 
     func isEqual(toDiffableObject object: ListDiffable?) -> Bool {

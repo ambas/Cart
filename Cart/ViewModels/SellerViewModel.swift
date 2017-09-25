@@ -29,5 +29,4 @@ class SellerViewModel: SellerViewModelType {
         return true
     }
 
-
 }
