@@ -12,7 +12,7 @@ import SwinjectStoryboard
 final class CartModuleAssembly: Assembly {
     func assemble(container: Container) {
 
-        container.register(CartViewModel.self) { r in
+        container.register(CartViewModel.self) { (r)  in
             var viewModel = CartViewModel()
             viewModel.connector = CartClient()
             return viewModel
@@ -21,7 +21,10 @@ final class CartModuleAssembly: Assembly {
         container.storyboardInitCompleted(CartViewController.self) { r, viewController in
             viewController.viewModel = r.resolve(CartViewModel.self)
         }
-    }
 
+        container.storyboardInitCompleted(UINavigationController.self) { r, viewController in
+            
+        }
+    }
 
 }

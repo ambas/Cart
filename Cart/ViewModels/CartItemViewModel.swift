@@ -10,12 +10,16 @@ import IGListKit
 
 class CartItemViewModel: CartItemViewModelType {
     var mainInfoCellViewModel: MainInfoCellViewModelType
+    var bundleViewModels: [CartItemViewModel]?
 
     let item: Item
 
     init(_ item: Item) {
         self.item = item
-        mainInfoCellViewModel = MainInfoCellViewModel(productImageURL: URL(string: "www.google.com")!, productName: item.name ?? "", brandName: "", variation: [], priceText: "", discountPriceText: "")
+        mainInfoCellViewModel = MainInfoCellViewModel(productImageURL: item.imageURL!, productName: item.name ?? "", brandName: "", variation: [], priceText: item.price!, discountPriceText: "")
+        if let bundles = item.bundles {
+            bundleViewModels = bundles.map(CartItemViewModel.init)
+        }
     } 
 
     func diffIdentifier() -> NSObjectProtocol {

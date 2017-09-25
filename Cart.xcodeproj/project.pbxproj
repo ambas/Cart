@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B00633271F7369AB007F1C01 /* CartItemFooterActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00633261F7369AB007F1C01 /* CartItemFooterActionCell.swift */; };
+		B00633291F736B98007F1C01 /* CartItemFooterActionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00633281F736B98007F1C01 /* CartItemFooterActionViewModel.swift */; };
+		B006332B1F736BD3007F1C01 /* CartItemFooterActionViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006332A1F736BD3007F1C01 /* CartItemFooterActionViewModelType.swift */; };
+		B006332C1F736E12007F1C01 /* CartItemFooterActionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B00633251F73698A007F1C01 /* CartItemFooterActionCell.xib */; };
 		B01132111F6E8EB500224F54 /* MainInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B011320F1F6E8EB500224F54 /* MainInfoCell.swift */; };
 		B01132121F6E8EB500224F54 /* MainInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01132101F6E8EB500224F54 /* MainInfoCell.xib */; };
 		B01132141F6E8F6D00224F54 /* MainInfoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01132131F6E8F6D00224F54 /* MainInfoCellViewModel.swift */; };
@@ -35,6 +39,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B00633251F73698A007F1C01 /* CartItemFooterActionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartItemFooterActionCell.xib; sourceTree = "<group>"; };
+		B00633261F7369AB007F1C01 /* CartItemFooterActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemFooterActionCell.swift; sourceTree = "<group>"; };
+		B00633281F736B98007F1C01 /* CartItemFooterActionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemFooterActionViewModel.swift; sourceTree = "<group>"; };
+		B006332A1F736BD3007F1C01 /* CartItemFooterActionViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemFooterActionViewModelType.swift; sourceTree = "<group>"; };
 		B011320F1F6E8EB500224F54 /* MainInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInfoCell.swift; sourceTree = "<group>"; };
 		B01132101F6E8EB500224F54 /* MainInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainInfoCell.xib; sourceTree = "<group>"; };
 		B01132131F6E8F6D00224F54 /* MainInfoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInfoCellViewModel.swift; sourceTree = "<group>"; };
@@ -99,6 +107,8 @@
 		B011320E1F6E8E8C00224F54 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B00633261F7369AB007F1C01 /* CartItemFooterActionCell.swift */,
+				B00633251F73698A007F1C01 /* CartItemFooterActionCell.xib */,
 				B011320F1F6E8EB500224F54 /* MainInfoCell.swift */,
 				B01132101F6E8EB500224F54 /* MainInfoCell.xib */,
 			);
@@ -108,6 +118,7 @@
 		B01132171F6E91F200224F54 /* ComponentViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B00633281F736B98007F1C01 /* CartItemFooterActionViewModel.swift */,
 				B01132131F6E8F6D00224F54 /* MainInfoCellViewModel.swift */,
 			);
 			path = ComponentViewModel;
@@ -143,6 +154,7 @@
 		B0CA8F8B1F6E7E86008A8493 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B006332A1F736BD3007F1C01 /* CartItemFooterActionViewModelType.swift */,
 				B011321A1F6E938000224F54 /* CartItemViewModel.swift */,
 				B01132181F6E925D00224F54 /* CartItemViewModelType.swift */,
 				B0CA8F8C1F6E7E95008A8493 /* CartViewModel.swift */,
@@ -297,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B006332C1F736E12007F1C01 /* CartItemFooterActionCell.xib in Resources */,
 				B0CA8F9C1F6E8493008A8493 /* LaunchScreen.storyboard in Resources */,
 				B0E5D6701F6E6AD7007FFAB1 /* Assets.xcassets in Resources */,
 				B01132121F6E8EB500224F54 /* MainInfoCell.xib in Resources */,
@@ -349,6 +362,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Cart/Pods-Cart-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Hatstall/Hatstall.framework",
 				"${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
@@ -357,6 +371,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hatstall.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGListKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
@@ -379,12 +394,15 @@
 				B0CA8F8D1F6E7E95008A8493 /* CartViewModel.swift in Sources */,
 				B011321D1F6E941600224F54 /* Item.swift in Sources */,
 				B01132191F6E925D00224F54 /* CartItemViewModelType.swift in Sources */,
+				B00633291F736B98007F1C01 /* CartItemFooterActionViewModel.swift in Sources */,
 				B01132111F6E8EB500224F54 /* MainInfoCell.swift in Sources */,
 				B0E5D6691F6E6AD7007FFAB1 /* AppDelegate.swift in Sources */,
 				B0CA8FA81F6E8AF9008A8493 /* SellerViewModelType.swift in Sources */,
 				B01132141F6E8F6D00224F54 /* MainInfoCellViewModel.swift in Sources */,
 				B011321B1F6E938000224F54 /* CartItemViewModel.swift in Sources */,
+				B00633271F7369AB007F1C01 /* CartItemFooterActionCell.swift in Sources */,
 				B0CA8FA21F6E876F008A8493 /* CartModuleAssembly.swift in Sources */,
+				B006332B1F736BD3007F1C01 /* CartItemFooterActionViewModelType.swift in Sources */,
 				B0CA8FA41F6E87DB008A8493 /* CartViewModelType.swift in Sources */,
 				B0CA8F8A1F6E7DE5008A8493 /* Seller.swift in Sources */,
 				B01132161F6E8F9A00224F54 /* MainInfoCellViewModelType.swift in Sources */,

@@ -12,11 +12,16 @@ import ObjectMapper
 struct Item: Requestable {
     static var path = ""
     var name: String?
+    var bundles: [Item]?
+    var imageURL : URL?
+    var price: String?
 
     init?(map: Map) {}
 
     mutating func mapping(map: Map) {
         name <- map["name"]
+        bundles <- map["bundles"]
+        imageURL <- (map["image"], URLTransform())
+        price <- map["price"]
     }
-
 }

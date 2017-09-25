@@ -1,41 +1,48 @@
 {
     "sellers": [
                 {
-                "name": "sampleName1",
+                "name": "Apple Store",
                 "items": [
                           {
-                          "name": "itemName1"
-                          },
-                          {
-                          "name": "itemName2"
-                          },
-                          {
-                          "name": "itemName3"
-                          },
-                          {
-                          "name": "itemName4"
-                          },
-                          {
-                          "name": "itemName5"
-                          },
-                          {
-                          "name": "itemName6"
-                          },
-                          {
-                          "name": "itemName7"
-                          },
-                          {
-                          "name": "itemName8"
+                          "name": "iPhone X",
+                          "price": "99999 bath",
+                          "image": "https://cdn.pixabay.com/photo/2017/09/13/00/33/apple-2744087_1280.png"
                           }
+                          ,
+                          {
+                          "name": "iPad",
+                          "price": "2000 bath",
+                          "image": "https://www.bhphotovideo.com/images/images2500x2500/apple_mk9n2ll_a_128gb_ipad_mini_4_1185478.jpg"
+                          }
+                          
                           ]
                 },
                 {
-                "name": "sampleName2",
+                "name": "Lazada",
                 "items": [
                           {
-                          "name": "itemName1"
-                          }
+                          "name": "iPhone X",
+                          "price": "50000 bath",
+                          "image": "https://cdn.pixabay.com/photo/2017/09/13/00/33/apple-2744087_1280.png",
+                          "bundles": [
+                            {
+                            "name": "AirPod",
+                            "price": "Free",
+                            "image": "https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/M/ME/MMEF2/MMEF2?wid=572&hei=572&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1503962928226"
+                            },
+                            {
+                            "name": "Case",
+                            "price": "Free",
+                            "image": "https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/M/Q0/MQ0J2/MQ0J2?wid=572&hei=572&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1488594988139"
+                            }
+                          
                           ]
-                }
+                        
+                        }
+                
                 ]
+            }]
 }
+
+
+

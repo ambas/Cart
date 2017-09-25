@@ -11,7 +11,11 @@ import IGListKit
 extension CartItemViewModel {
     func viewModels() -> [ListDiffable] {
         var viewModels: [ListDiffable] = [mainInfoCellViewModel]
-
+        viewModels.append(CartItemFooterActionViewModel())
+        if let bundles = self.bundleViewModels {
+            viewModels.append(contentsOf: bundles.map { $0.mainInfoCellViewModel } as [ListDiffable])
+        }
         return viewModels
     }
 }
+

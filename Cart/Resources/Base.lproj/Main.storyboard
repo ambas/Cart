@@ -54,7 +54,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j6r-OW-TNd"/>
                     </view>
-                    <navigationItem key="navigationItem" id="VuG-yr-CUZ"/>
+                    <navigationItem key="navigationItem" id="VuG-yr-CUZ">
+                        <barButtonItem key="rightBarButtonItem" title="Refresh" id="Pyk-DG-T69">
+                            <connections>
+                                <action selector="refreshButtonDidTouch:" destination="Lx0-BG-6GE" id="X2r-zQ-qjN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="9kZ-E4-S3C" id="V96-c1-Y2x"/>
                     </connections>

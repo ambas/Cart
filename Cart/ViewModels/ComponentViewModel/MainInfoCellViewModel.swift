@@ -7,6 +7,7 @@
 //
 
 import IGListKit
+import Kingfisher
 
 class MainInfoCellViewModel: MainInfoCellViewModelType {
 
@@ -16,7 +17,13 @@ class MainInfoCellViewModel: MainInfoCellViewModelType {
     }
 
     func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
-        return true
+        guard let mainInfoViewModel = object as? MainInfoCellViewModelType else {
+            return false
+        }
+        let isEqual = mainInfoViewModel.productImageURL == productImageURL &&
+                      mainInfoViewModel.priceText == priceText &&
+                      mainInfoViewModel.discountPriceText == discountPriceText
+        return isEqual
     }
 
     var productImageURL: URL

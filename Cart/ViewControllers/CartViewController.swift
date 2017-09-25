@@ -32,6 +32,16 @@ class CartViewController: UIViewController {
             self.adapter.performUpdates(animated: true, completion: nil)
         }
     }
+
+    @IBAction func refreshButtonDidTouch(_ sender: Any) {
+        viewModel.getSellers { [unowned self] sellerViewModels in
+            self.sellerViewModels = sellerViewModels
+            self.adapter.performUpdates(animated: true, completion: nil)
+        }
+    }
+
+
+
 }
 
 extension CartViewController: ListAdapterDataSource {

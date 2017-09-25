@@ -22,6 +22,7 @@ class MainInfoCell: UICollectionViewCell {
             brandNameLabel.text = viewModel.brandName
             priceLabel.text = viewModel.priceText
             discountLabel.text = viewModel.discountPriceText
+            productImageView.kf.setImage(with: viewModel.productImageURL)
         }
     }
 }

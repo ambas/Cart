@@ -15,7 +15,7 @@ class SellerViewModel: SellerViewModelType {
     init(_ seller: Seller) {
         sellerName = seller.name ?? ""
         if let items = seller.items {
-            itemViewModels = items.map { CartItemViewModel($0) }
+            itemViewModels = items.map(CartItemViewModel.init)
         } else {
             itemViewModels = []
         }

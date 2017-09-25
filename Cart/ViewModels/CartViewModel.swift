@@ -13,14 +13,14 @@ struct CartViewModel: CartViewModelType {
 
     func getSellers(success: @escaping ([SellerViewModelType]) -> ()) {
         connector.requestObject(path: "", param: [:], isShowLoading: false, require: nil, errorHandler: { (error) in
-
+            // Handle Error
         }) { (cart: Cart) in
             guard let sellers = cart.sellers else {
                 success([])
                 return
             }
 
-            let sellersViewModel = sellers.map { SellerViewModel($0) }
+            let sellersViewModel = sellers.map(SellerViewModel.init)
             success(sellersViewModel)
         }
     }

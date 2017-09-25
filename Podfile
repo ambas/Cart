@@ -10,5 +10,6 @@ target 'Cart' do
   pod 'IGListKit', '~> 3.1.1'
   pod 'Swinject', '~> 2.1.1'
   pod 'SwinjectStoryboard', '~> 1.1.2'
+  pod 'Kingfisher', '~> 3.12.2'
 
 end

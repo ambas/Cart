@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CartItemFooterActionCell" customModule="Cart">
+            <rect key="frame" x="0.0" y="0.0" width="557" height="36"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="557" height="36"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="sax-qN-ybE">
+                        <rect key="frame" x="112" y="2" width="60" height="24"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart_selected" translatesAutoresizingMaskIntoConstraints="NO" id="ojU-Rd-bvi">
+                                <rect key="frame" x="0.0" y="3.5" width="20" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="JwD-23-jr3"/>
+                                    <constraint firstAttribute="height" constant="17" id="K9R-GH-FQK"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart-cell-remove-button-normal" translatesAutoresizingMaskIntoConstraints="NO" id="6iB-Iw-zqw">
+                                <rect key="frame" x="36" y="0.0" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="I3m-yr-Agk"/>
+                                    <constraint firstAttribute="width" constant="24" id="TKa-sf-vS4"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kay-n1-iJA">
+                        <rect key="frame" x="358" y="0.0" width="183" height="12"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IzU-9T-zEd">
+                                <rect key="frame" x="0.0" y="0.0" width="183" height="11"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6T-rU-4t7">
+                                        <rect key="frame" x="0.0" y="0.0" width="153" height="11"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icBigDown" translatesAutoresizingMaskIntoConstraints="NO" id="fFO-GH-bwp">
+                                        <rect key="frame" x="153" y="0.0" width="30" height="11"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="u60-9J-BhD"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yW9-8m-7cM">
+                                <rect key="frame" x="0.0" y="11" width="183" height="1"/>
+                                <color key="backgroundColor" red="0.85480856895446777" green="0.85495573282241821" blue="0.85479927062988281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="qGW-2u-jnw"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="61" id="uhy-nQ-Z7g"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sax-qN-ybE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="8C8-hT-c7z"/>
+                <constraint firstItem="kay-n1-iJA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="BPn-Qb-YhC"/>
+                <constraint firstAttribute="bottom" secondItem="kay-n1-iJA" secondAttribute="bottom" constant="24" id="JsD-Hx-rLp"/>
+                <constraint firstItem="kay-n1-iJA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sax-qN-ybE" secondAttribute="trailing" constant="8" id="XLV-GI-0Pr"/>
+                <constraint firstItem="sax-qN-ybE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="112" id="YQU-W9-hRx"/>
+                <constraint firstAttribute="trailing" secondItem="kay-n1-iJA" secondAttribute="trailing" constant="16" id="gNf-r5-uAc"/>
+            </constraints>
+            <size key="customSize" width="557" height="168"/>
+            <point key="canvasLocation" x="-33" y="168"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cart-cell-remove-button-normal" width="16" height="20"/>
+        <image name="heart_selected" width="24" height="21"/>
+        <image name="icBigDown" width="30" height="30"/>
+    </resources>
+</document>
